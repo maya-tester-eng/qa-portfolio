@@ -1,0 +1,8 @@
+Test ID,Title,Module,Preconditions,Steps,Expected Result,Actual Result,Status,Priority,Notes
+TC-001,Verify login with valid credentials,Authentication,"Open https://www.saucedemo.com","1) Go to login > 2) Enter username 'standard_user' > 3) Enter 'secret_sauce' > 4) Click Login","Inventory page is displayed",,Not Run,Medium,Positive
+TC-002,Verify login with invalid password shows error,Authentication,"Open https://www.saucedemo.com","1) Go to login > 2) Enter 'standard_user' > 3) Enter 'wrongpass' > 4) Click Login","Error shown; user stays on login",,Not Run,High,Negative
+TC-003,Verify locked out user cannot login,Authentication,"Open https://www.saucedemo.com","1) Go to login > 2) Enter 'locked_out_user' > 3) Enter 'secret_sauce' > 4) Click Login","Locked-out message shown; no login",,Not Run,High,Edge
+TC-004,Verify validation for empty username and password,Authentication,"Open https://www.saucedemo.com","1) Leave both fields empty > 2) Click Login","Validation message shown",,Not Run,Medium,Form validation
+TC-005,Verify logout returns to login page,Session Management,"Logged in as standard_user","1) Open menu > 2) Click Logout","Back to login; session cleared",,Not Run,Medium,Cleanup
+
+
