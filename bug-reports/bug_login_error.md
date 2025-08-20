@@ -1,6 +1,9 @@
 # BUG-001: Error icon overlaps password field on small window
 
-Type: UI/Accessibility | Area: Auth/Login | Env: macOS, Chrome latest, window ~900×700
+**Links:** US-001, TC-002  
+**Type:** UI/Accessibility  
+**Area:** Authentication / Login  
+**Env:** macOS, Chrome latest, window ~900×700
 
 ## Steps
 1) Open https://www.saucedemo.com
